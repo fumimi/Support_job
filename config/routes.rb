@@ -1,4 +1,11 @@
 SupportJob::Application.routes.draw do
+  root "information#home"
+  get "information/about"
+  get "information/help"
+  get "information/faq"
+  get "home/about"
+  get "home/help"
+  get "home/faq"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
