@@ -1,11 +1,8 @@
 SupportJob::Application.routes.draw do
   root "information#home"
-  get "information/about"
-  get "information/help"
-  get "information/faq"
-  get "home/about"
-  get "home/help"
-  get "home/faq"
+  match '/about',  to: 'information#about', via: 'get'
+  match '/help',  to: 'information#help', via: 'get'
+  match '/faq',  to: 'information#faq', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
