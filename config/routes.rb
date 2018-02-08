@@ -1,4 +1,9 @@
 SupportJob::Application.routes.draw do
+  get "users/show"
+  devise_for :users, :controllers => {
+    :registrations => "registrations"
+  }
+  resources :users
   root "information#home"
   match '/about',  to: 'information#about', via: 'get'
   match '/help',  to: 'information#help', via: 'get'
