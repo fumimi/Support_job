@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "TOP", root_path, id: "logo" %>
+    <%= link_to "就活サポートツール", root_path, id: "logo" %>
     </ul>
       <div class="nav navbar-nav navbar-right">
         <div class="dropdown">
@@ -8,18 +8,18 @@
             Menu
             <span class="caret"></span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "FAQ", faq_path %></li>
-            <li><a href="#">News</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Sign in</a></li>
-          </ul>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "FAQ", faq_path %></li>
+              <li><a href="#">News</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Sign in</a></li>
+            </ul>
         </div>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "google",    'https://www.google.co.jp/' %></li>
-        <li><%= link_to "yahoo!",    'https://www.yahoo.co.jp/' %></li>
-      </ul>
- </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "google", 'https://www.google.co.jp/', target: "_blank" %></li>
+      <li><%= link_to "yahoo!", 'https://www.yahoo.co.jp/', target: "_blank" %></li>
+    </ul>
+  </div>
 </header>
