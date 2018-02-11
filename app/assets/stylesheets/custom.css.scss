@@ -3,6 +3,14 @@
 @import "bootstrap-sprockets";
 
 
+@mixin box_sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 /* all general */
 
@@ -17,6 +25,14 @@ body {
 
 .center {
   text-align: center;
+}
+
+.field{
+  text-align: center;
+}
+.actions{
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* text */
@@ -82,4 +98,20 @@ footer ul {
       margin-left: 15px;
       margin-right: 10px;
     }
+}
+
+/* otherwise */
+
+.debug_dump{
+  clear: both;
+  width: 90%;
+  text-align: center;
+  margin:auto;
+  @include box_sizing;
+}
+
+/* forms */
+
+input{
+  width:50%;
 }
