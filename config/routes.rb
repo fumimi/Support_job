@@ -1,5 +1,5 @@
 SupportJob::Application.routes.draw do
-  get "users/show"
+  match '/show',  to: 'users#show', via: 'get'
   devise_for :users, :controllers => {
     :registrations => "registrations"
   }
