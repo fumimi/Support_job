@@ -1,6 +1,5 @@
 <% if signed_in? %>
-<h1>ログインしている状態です。</h1>
-<h2>このページに企業の情報を登録する機能を実装する。</h2>
+ <%= render 'shered/user_date' %>
 
 <% else %>
 <% provide(:title, "home") %>

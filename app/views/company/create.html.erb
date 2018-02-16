@@ -1,0 +1,9 @@
+<h2>企業情報登録！</h2>
+
+<%= form_for(@company) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <%= f.label :"企業名" %><br />
+  <%= f.text_field :nameco %>
+  </div>
+  <%= f.submit "登録", class: "btn btn-lg btn-primary" %>
+<% end %>

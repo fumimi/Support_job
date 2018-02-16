@@ -1,9 +1,13 @@
 SupportJob::Application.routes.draw do
+  match '/create',  to: 'company#create', via: 'get'
+  match '/edit',  to: 'company#edit', via: 'get'
   match '/show',  to: 'users#show', via: 'get'
   devise_for :users, :controllers => {
     :registrations => "registrations"
   }
-  resources :users
+  resources :users do
+  resources :company, only: [:create,:edit,:destroy]
+  end
   root "information#home"
   match '/about',  to: 'information#about', via: 'get'
   match '/help',  to: 'information#help', via: 'get'
