@@ -1,0 +1,16 @@
+<h1>企業一覧</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>企業名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.nameco %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
